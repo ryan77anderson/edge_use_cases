@@ -1,0 +1,65 @@
+﻿use_case_name,sector_primary,biz_value_multiplier,device_edge_or_central,cost,model-complexity,gpu_benefit,data-intensity,physical_access
+automation - autonomous ship sailing across ocean,transportation,8,2,8,8,7,9,2
+automation - drones as first responders,federal,5,2,8,9,9,9,3
+automation - forklift telemetry and asset health,industrial,4,2,3,4,2,5,5
+automation - humanoid robot assisting in shipping department,industrial,8,4,8,8,7,5,5
+automation - modernizing SCADA infra and intreop,industrial,7,3,7,2,2,6,4
+automation - robot arm control system,industrial,7,3,5,5,5,6,4
+camera - social distancing 7 crowd density monitor and alert,retail,3,5,5,5,6,4,4
+camera in chemical plant monitoring for atypical viscosity,industrial,5,4,6,5,7,5,4
+camera in paint plant detect imperfections,industrial,5,4,6,5,7,5,4
+camera in rideshare guarding driver security ,transportation,4,5,2,5,5,3,7
+camera in store aisle monitoring for slip spills,retail,4,4,3,4,5,3,5
+camera in stores monitoring for purchase linger and inventory,retail,4,4,4,4,5,3,5
+camera in truck cab watching for driver fatigue,transportation,4,3,2,4,5,3,5
+camera on car assisting self driving,transportation,6,2,2,7,6,3,5
+camera on cargo ship observing surrounding vessels,transportation,5,1,5,4,6,6,3
+camera QA inspection - quality manufacturing ,industrial,6,3,4,3,7,6,5
+camera security detecting fence intrusion,federal,5,3,3,4,7,7,5
+camera security guarding army FOB,federal,7,1,6,7,8,7,2
+camera shipping and receiving volume monitoring,industrial,4,4,4,5,4,6,5
+camera thermal at airport gates watching for elevated temp,transportation,4,3,5,4,5,3,4
+communications  - 5G network build out (national provider),communications,8,5,9,4,5,8,3
+communications - 5G mm wave antenna array gain adjust,communications,9,4,7,6,5,5,2
+communications - low earth orbit wireless comms network,communications,9,2,8,3,4,5,1
+communications - private LTE CBRS for industrial ,communications,7,5,7,2,4,5,5
+communications - VR immersive at highway speeds,communications,6,3,7,2,9,8,8
+kiosk - retail store - update of legacy POS retail equipment,retail,6,5,3,2,3,4,6
+kiosk financial - ATM disconnected operation remote mode,financial,3,4,5,2,3,5,7
+kiosk financial - bank ATM AI vision in camera ,financial,3,3,3,5,3,5,4
+kiosk transportation - bus contactless card fee collection ,transportation,3,4,4,2,2,5,5
+kiosk transportation - railway station ticket sales,transportation,4,5,5,2,2,5,5
+kiosk transportation - weigh scale station automation,transportation,2,5,4,2,2,5,4
+manufacturing plant - worker temperature health ,industrial,4,5,4,2,3,5,5
+manufacturing plant camera observing FDA OSHA best practices,industrial,5,5,3,8,6,7,5
+monitor - acoustic machine analyze FFT outliers,industrial,5,4,3,4,5,6,4
+monitor - air and water quality monitoring stations,industrial,2,4,3,3,3,5,3
+monitor - fleet health and status ,industrial,4,5,4,4,4,8,3
+monitor - pharmacy HVAC and refrigeration,retail,4,4,3,2,2,6,5
+monitor - power transmission lines multi source alerting,industrial,7,5,5,4,5,7,1
+monitor - traffic counting and monitor risky intersections,transportation,4,6,5,6,7,8,2
+monitor - transportation and monitoring of medicine temperature,transportation,3,5,4,3,3,5,3
+monitor - supply chain fruit in transit blockchain,transportation,5,6,4,1,3,6,3
+manufacturing plant - contamination,industrial,5,5,7,5,6,7,6
+communications - drone does RF survey of signal strength,communications,5,5,7,5,6,8,5
+automation - life science robotic lab testing scale X1000 ,industrial,6,5,7,6,6,9,5
+automation - traffic control,transportation,3,7,5,7,6,6,5
+automation -  farming and agriculture - target pesticides,agriculture,4,5,5,6,6,6,6
+automation -  farming and agriculture -  irrigation ,agriculture,4,3,3,5,5,5,6
+automation -  farming and agriculture - harvest and inspect,agriculture,5,3,4,5,6,5,6
+automation - industrial - repurpose CNC tools for new applications,industrial,4,4,4,2,3,4,5
+monitor - energy transmission grid insights demand response,industrial,7,4,5,4,3,5,3
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+ ,,,,,,,,
