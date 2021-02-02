@@ -1,65 +1,105 @@
-﻿use_case_name,sector_primary,biz_value_multiplier,device_edge_or_central,cost,model-complexity,gpu_benefit,data-intensity,physical_access
-automation - autonomous ship sailing across ocean,transportation,8,2,8,8,7,9,2
-automation - drones as first responders,federal,5,2,8,9,9,9,3
-automation - forklift telemetry and asset health,industrial,4,2,3,4,2,5,5
-automation - humanoid robot assisting in shipping department,industrial,8,4,8,8,7,5,5
-automation - modernizing SCADA infra and intreop,industrial,7,3,7,2,2,6,4
-automation - robot arm control system,industrial,7,3,5,5,5,6,4
-camera - social distancing 7 crowd density monitor and alert,retail,3,5,5,5,6,4,4
-camera in chemical plant monitoring for atypical viscosity,industrial,5,4,6,5,7,5,4
-camera in paint plant detect imperfections,industrial,5,4,6,5,7,5,4
-camera in rideshare guarding driver security ,transportation,4,5,2,5,5,3,7
-camera in store aisle monitoring for slip spills,retail,4,4,3,4,5,3,5
-camera in stores monitoring for purchase linger and inventory,retail,4,4,4,4,5,3,5
-camera in truck cab watching for driver fatigue,transportation,4,3,2,4,5,3,5
-camera on car assisting self driving,transportation,6,2,2,7,6,3,5
-camera on cargo ship observing surrounding vessels,transportation,5,1,5,4,6,6,3
-camera QA inspection - quality manufacturing ,industrial,6,3,4,3,7,6,5
-camera security detecting fence intrusion,federal,5,3,3,4,7,7,5
-camera security guarding army FOB,federal,7,1,6,7,8,7,2
-camera shipping and receiving volume monitoring,industrial,4,4,4,5,4,6,5
-camera thermal at airport gates watching for elevated temp,transportation,4,3,5,4,5,3,4
-communications  - 5G network build out (national provider),communications,8,5,9,4,5,8,3
-communications - 5G mm wave antenna array gain adjust,communications,9,4,7,6,5,5,2
-communications - low earth orbit wireless comms network,communications,9,2,8,3,4,5,1
-communications - private LTE CBRS for industrial ,communications,7,5,7,2,4,5,5
-communications - VR immersive at highway speeds,communications,6,3,7,2,9,8,8
-kiosk - retail store - update of legacy POS retail equipment,retail,6,5,3,2,3,4,6
-kiosk financial - ATM disconnected operation remote mode,financial,3,4,5,2,3,5,7
-kiosk financial - bank ATM AI vision in camera ,financial,3,3,3,5,3,5,4
-kiosk transportation - bus contactless card fee collection ,transportation,3,4,4,2,2,5,5
-kiosk transportation - railway station ticket sales,transportation,4,5,5,2,2,5,5
-kiosk transportation - weigh scale station automation,transportation,2,5,4,2,2,5,4
-manufacturing plant - worker temperature health ,industrial,4,5,4,2,3,5,5
-manufacturing plant camera observing FDA OSHA best practices,industrial,5,5,3,8,6,7,5
-monitor - acoustic machine analyze FFT outliers,industrial,5,4,3,4,5,6,4
-monitor - air and water quality monitoring stations,industrial,2,4,3,3,3,5,3
-monitor - fleet health and status ,industrial,4,5,4,4,4,8,3
-monitor - pharmacy HVAC and refrigeration,retail,4,4,3,2,2,6,5
-monitor - power transmission lines multi source alerting,industrial,7,5,5,4,5,7,1
-monitor - traffic counting and monitor risky intersections,transportation,4,6,5,6,7,8,2
-monitor - transportation and monitoring of medicine temperature,transportation,3,5,4,3,3,5,3
-monitor - supply chain fruit in transit blockchain,transportation,5,6,4,1,3,6,3
-manufacturing plant - contamination,industrial,5,5,7,5,6,7,6
-communications - drone does RF survey of signal strength,communications,5,5,7,5,6,8,5
-automation - life science robotic lab testing scale X1000 ,industrial,6,5,7,6,6,9,5
-automation - traffic control,transportation,3,7,5,7,6,6,5
-automation -  farming and agriculture - target pesticides,agriculture,4,5,5,6,6,6,6
-automation -  farming and agriculture -  irrigation ,agriculture,4,3,3,5,5,5,6
-automation -  farming and agriculture - harvest and inspect,agriculture,5,3,4,5,6,5,6
-automation - industrial - repurpose CNC tools for new applications,industrial,4,4,4,2,3,4,5
-monitor - energy transmission grid insights demand response,industrial,7,4,5,4,3,5,3
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
- ,,,,,,,,
+use_case_class,use_case_name,sector_primary,edge_node_primary,kpi_or_value_prop_example
+ai vision ,farming and agriculture - harvest and inspect,agriculture,cameras,qa rejection accuracy or throughput
+automation ,farming and agriculture - target pesticides,agriculture,drones and cameras,chemicals per acre or per plant
+automation ,farming and agriculture -  irrigation ,agriculture,controller,crop yield per gallon of water
+automation ,agriculture - high density vertical farms controls ,agriculture,controller,crop yield per acre and cost
+communications,DOD - Autonomic RF Network  Layer,communications,antenna & comms,time to deploy high speed network
+communications,5G antenna array gain adjust,communications,antenna & comms,antenna  cost per square mile
+communications,drone RF survey of signal strength - 5G,communications,antenna & comms,average signal strength / gaps
+communications,low earth orbit comms & compute network,communications,compute for edge,paying customers per satellite 
+communications,5G Phased Array Beamforming,communications,antenna & comms,RF infra dollars per acre serviced
+communications,private LTE CBRS for industrial ,communications,antenna & comms,cost per node or acre at low latency
+communications,software defined phased array radio - SDPAR,communications,antenna & comms,RF infra dollars per acre serviced
+communications,XR remote and mobile usage,communications,vehicle,frames per second at edge
+communications,VR - fully immersive XR experience,communications,home hub,latency / fps / cost per user hour
+communications,5G network build out (national provider),communications,antenna & comms,cost per node for high speed  comms
+communications,RF 5G  signal coverage,communications  ,antenna & comms,fidelity of situational awareness / blind spots
+communications,unauthorized RF signal detection,communications  ,antenna & comms,cost to deploy / detected unauthorized 
+automation ,automobile - entertainment system,entertainment,vehicle,cost per unit 
+communications,Cloud Gaming,entertainment,gaming console,latency / cost per game hour
+communications,video optimization,entertainment,network appliances,cost per content at latency
+ai vision ,inspection for gate or fence security,federal,cameras,qa rejection accuracy or throughput
+defense,field asset instrumentation  - legacy asset retrofits,federal,vehicle,cost per retrofit node / asset TCO / benefits
+automation ,drones as first responders,federal,drones and cameras,autonomous workload disconnected
+automation ,drone nav and vision,federal,cameras,speed of innovation / speed to reconfigure
+communications,Dynamic Environment Sensing w mmWave,federal,antenna & comms,fidelity of situational awareness / blind spots
+defense,decision support - sigint - next gen interfaces,federal,compute for edge,incremental gain in actionable signal
+defense,forward operating base comms monitor,federal,antenna & comms,FOB comms robustness / bad actor alerts
+defense,"inter agency equipment, systems and data interoperation",federal,compute for edge,index of equipment interoperability 
+defense,security - automated montoring - fob perimiter or compound,federal,cameras,"time to alert, respond / intrusions"
+,seeing around corners - securiity,federal,,
+kiosk ,financial - ATM disconnected operation remote mode,financial,kiosk  ,customer satisfaction / uptime
+kiosk ,financial - bank ATM AI vision in camera ,financial,kiosk ,vandalism damage per kiosk / arrests
+health ,brain computer interface ,health,BCI computer,accuracy / compute per watt
+health ,eldercare - age at home - accident detection ,health,home hub,time to response on action events
+health ,eldercare - age at home - emotional / empathetic ,health,home hub,time to response on action events
+health ,in hospital patient monitoring,health,monitor  ,time to respond / cost to monitor
+ai vision ,chemical plant monitoring for atypical viscosity,industrial,cameras,qa rejection / lost batches
+ai vision ,forest fires and power line fires - remote locations,industrial,cameras,accuracy / cost per node
+ai vision ,pipeline spill detection,industrial,cameras,time to respond
+ai vision ,weld quality inspection,industrial,cameras,quality kpis and throughput
+ai vision ,paint plant detect imperfections,industrial,cameras,qa kpis / lost batches / quality grade
+ai vision ,QA inspection - quality manufacturing ,industrial,cameras,qa rejection accuracy or throughput
+ai vision ,shipping and receiving volume monitoring,industrial,cameras,supply chain disruptions / time to respond
+monitor ,remote monitor of oil and gas,industrial,cameras and acoustic,cost per asset monitored
+ai vision ,FDA regulated facility - best practices health & hygiene,industrial,cameras,483 violations per plant  per year
+health ,worker health and well being - OSHA,industrial,sensors or cameras,worker injuries or medical events
+modernization,manufacturing plant - OSHA best practices,industrial,cameras,OSHA violations per plant
+ai vision ,pipeline internal PIG inspection,industrial,cameras,defects per cost of inspect
+automation ,forklift telemetry and asset health,industrial,vehicle,less breakdown or injury events
+monitor ,acoustic machine analyze FFT outliers,industrial,audio analyzer,supplemental alerts / failures per unit
+monitor ,buildings SMART - HVAC status,industrial,monitor  ,cost to instrument & integrate per site
+monitor ,buildings SMART - power monitoring,industrial,monitor  ,power consumption / cost per sense node
+monitor ,buildings SMART - water ,industrial,monitor  ,water consumption / cost per sense node
+monitor ,energy - power transmission lines multi source alerting,industrial,monitor  ,time to respond and repair
+monitor ,energy transmission grid insights - atypical events,industrial,cameras and acoustic,fire events / average time to respond
+monitor ,energy transmission grid insights - demand response,industrial,sensor arrays,average time to respond / outages
+monitor ,fleet health and status ,industrial,vehicle,total monitor & repair cost per vehicle 
+monitor ,SMART Grid,industrial,monitor  ,cost per khW
+automation ,humanoid robot for construction ,industrial,controllers & cameras,"flexibility, accuracy, cost"
+automation ,cobot / humanoid robot for shipping & inventory,industrial,controllers & cameras,"flexibility, accuracy, cost"
+automation ,industrial - repurpose CNC tools for new applications,industrial,industrial assets,capacity utilization / flexibility
+automation ,life science robotic lab testing; scale X1000 ,industrial,controller,cost per experiment
+automation ,quadraped robot for warehouse tasks,industrial,controllers & cameras,"flexibility, accuracy, cost"
+automation ,robot arm control system,industrial,controller,capacity utilization / flexibility
+communications,verbal command and control of assets - disconnected ,industrial,compute for edge,accuracy / cost per node
+modernization,manufacturing plant - contamination avoidance,industrial,cameras,spoiled batches / FDA 483 violations
+modernization,manufacturing plant - FDA regulations and 483 avoidance,industrial,cameras,483 violations per plant
+modernization,SCADA infrastructure modernize and interoperation,industrial,controller,less catastrophic infrastructure events
+modernization,HVAC instrumentation and monitoring / retrofit,industrial,monitor  ,cost to retrofit instrument per site
+monitor ,air and water quality monitoring stations,industrial,monitor  ,total cost per node / reduced truck rolls
+monitor ,Predictive Maintenance,industrial,monitor  ,count of catastrophic fails
+,manufacturing plant - disconnection - continue operations,industrial,,
+ai vision ,social distancing crowd density monitor and alert,retail,cameras,violations per location per week
+monitor ,security - home or retail security - ai human hybrid,retail,cameras,time to respond / cost to monitor
+ai vision ,retail aisle monitoring for slip spills,retail,cameras,lawsuits per  store per year
+ai vision ,retail monitoring for purchase linger and inventory,retail,cameras,sales per linear foot shelf space
+ai vision ,retail monitoring for store aisle traffic heat mappinig,retail,cameras,sales per linear foot shelf space
+modernization,retail store - update of legacy POS retail equipment,retail,compute for edge,cost per checkout per year
+monitor ,insurance scoring driver safety,retail,vehicle,cost to monitor / accuracy
+monitor ,pharmacy HVAC and refrigeration,retail,refrigerators,spoiled medicine per year
+ai vision ,License plate recognition (LPR),smarter cities,cameras,cost per node 
+monitor ,Traffic Management,smarter cities,controllers & cameras,cost per intersection
+ai vision ,railway - track signal system modernization ,transportation,cameras,cost of updgrades / truck rolls
+ai vision ,traffic counting and monitor risky intersections,transportation,cameras,deaths per intersection; traffic speed
+ai vision ,Rail Crossings - Vehicle Detection between closed gates,transportation,railway cameras,accidents / car strikes
+ai vision ,truck cab watching for driver fatigue,transportation,cameras,accidents per driver per year
+ai vision ,"Security - unauthorized people in yards, near trains",transportation,railway cameras,accidents / trespasses 
+ai vision ,railway - rolling stock and rail anomoly detection,transportation,cameras,reduction of danger events
+ai vision ,Railway Rolling Stock - Missing / Damaged Components,transportation,railway cameras,asset life extension / failures
+ai vision ,Rail Track Inspection / Damage to Fixed Assets,transportation,railway cameras,asset life extension / failures
+ai vision ,Visual Inspection - Hail Damage - Aircraft,transportation,drones and cameras,turnaround on inspect
+ai vision ,Visual Inspection - Bird Strike / Lightning Strike - Aircraft,transportation,drones and cameras,turnaround on inspect
+monitor ,transportation and monitoring of medicine temperature,transportation,transport container,spoiled batches per year
+monitor ,"Railcar Chemical Monitoring (temp, time in transit)",transportation,railway nodes,lost batches
+ai vision ,rideshare guarding driver security ,transportation,cameras,driver injuries /  time to police response
+ai vision ,thermal - airport immigration - elevated temperature,transportation,camera - thermal,positive infections per 1000 screened 
+ai vision ,Visual Inspection - Graffiti - cars and infrastructure,transportation,railway cameras,reduction of vandalism
+automation ,autonomous ship sailing across ocean,transportation,controllers & cameras,autonomous workload disconnected
+automation ,self driving car - autonomous navigation,transportation,vehicle,accidents per vehicle / traffic error
+automation ,Locomotive Computers - OCP / System Upgrade,transportation,railway nodes,total cost of compute per node
+kiosk ,transportation - bus contactless card fee collection ,transportation,kiosk,customer satisfaction / uptime
+kiosk ,transportation - railway station ticket sales,transportation,kiosk ,total cost per kiosk per year / truck rolls
+modernization,transportation - weigh scale station automation,transportation,kiosk  ,total cost per kiosk per year / truck rolls
+monitor ,supply chain fruit in transit blockchain,transportation,cameras,cost per contract / batch spoilage
+monitor ,Acoustic Analysis - atypical sounds / alert,transportation,railway nodes,failure detection
